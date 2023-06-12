@@ -1,8 +1,8 @@
 {
   "name": "Paradox Alarm Interface (Development version)",
-  "version": "3.1.0",
+  "version": "3.0.0",
   "slug": "paradox_alarm_interface_dev",
-  "description": "Warning. Breaking changes. Clear MQTT before upgrading from deprecated version. Supports SP/MG/EVO, Serial and IP150 connections.",
+  "description": "Warning. Breaking changes. Clear MQTT before upgrading from deprecated version. Supports SP/MG/EVO, Serial and IP150 connections.test123",
   "uart": true,
   "url": "https://github.com/ParadoxAlarmInterface/pai/tree/dev",
   "arch": [ "armhf", "armv7", "aarch64", "amd64", "i386" ],
@@ -25,7 +25,7 @@
   "options": {
     "LOGGING_LEVEL_CONSOLE": 20,
     "LOGGING_LEVEL_FILE": 40,
-    "CONNECTION_TYPE": "Serial",
+    "CONNECTION_TYPE": "IP",
     "SERIAL_PORT": "/dev/ttyUSB0",
     "SERIAL_BAUD": 9600,
     "IP_CONNECTION_HOST": "192.168.1.178",
@@ -50,8 +50,8 @@
     "MQTT_HOST": "core-mosquitto",
     "MQTT_PORT": 1883,
     "MQTT_KEEPALIVE": 60,
-    "MQTT_USERNAME": "pai",
-    "MQTT_PASSWORD": "my_very_secure_password",
+    "MQTT_USERNAME": "mqtt",
+    "MQTT_PASSWORD": "mqttpassword",
     "MQTT_HOMEASSISTANT_AUTODISCOVERY_ENABLE": true,
     "COMMAND_ALIAS": {
       "arm": "partition all arm",
